@@ -19675,3 +19675,149 @@ NoMethodError (undefined method `is_waitlisted' for nil:NilClass):
   /usr/lib/ruby/gems/1.8/gems/hoptoad_notifier-2.4.11/lib/hoptoad_notifier/user_informer.rb:12:in `call'
 
 Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /home/srinath/Documents/expertiza/vendor/plugins/will_paginate/lib/will_paginate.rb:39)
+** [Hoptoad] Notifier 2.4.11 ready to catch errors
+
+
+Processing ContentPagesController#view_default (for 127.0.0.1 at 2011-11-01 16:39:48) [GET]
+  Parameters: {"action"=>"view_default", "controller"=>"content_pages"}
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering content_pages/view_default
+Completed in 426ms (View: 89, DB: 115) | 200 OK [http://localhost/]
+
+
+Processing ContentPagesController#view_default (for 127.0.0.1 at 2011-11-01 16:39:48) [GET]
+  Parameters: {"action"=>"view_default", "controller"=>"content_pages"}
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering content_pages/view_default
+Completed in 270ms (View: 15, DB: 8) | 200 OK [http://localhost/]
+
+
+Processing AuthController#login (for 127.0.0.1 at 2011-11-01 16:39:57) [POST]
+  Parameters: {"commit"=>"Login", "action"=>"login", "authenticity_token"=>"vSGfkj95sbm4Gi7c7ZyjkQ9Jr+XznsqecvfWGoZke6Y=", "controller"=>"auth", "login"=>{"name"=>"admin", "password"=>"[FILTERED]"}}
+Action: authorised
+Authorised? true
+User admin successfully logged in
+Logging in user as role Credentials
+Redirected to http://localhost:3000/tree_display/drill
+Completed in 530ms (DB: 232) | 302 Found [http://localhost/auth/login]
+
+
+Processing TreeDisplayController#drill (for 127.0.0.1 at 2011-11-01 16:39:57) [GET]
+  Parameters: {"action"=>"drill", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 187ms (DB: 5) | 302 Found [http://localhost/tree_display/drill]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2011-11-01 16:39:58) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 3548ms (View: 2950, DB: 260) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing MenuItemsController#link (for 127.0.0.1 at 2011-11-01 16:40:08) [GET]
+  Parameters: {"name"=>["setup", "controllers"], "action"=>"link", "controller"=>"menu_items"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/site_controllers/list
+Completed in 135ms (DB: 12) | 302 Found [http://localhost/menu/setup/controllers]
+
+
+Processing SiteControllersController#list (for 127.0.0.1 at 2011-11-01 16:40:09) [GET]
+  Parameters: {"action"=>"list", "controller"=>"site_controllers"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering site_controllers/list
+Completed in 2015ms (View: 592, DB: 61) | 200 OK [http://localhost/site_controllers/list]
+
+
+Processing MenuItemsController#link (for 127.0.0.1 at 2011-11-01 17:05:33) [GET]
+  Parameters: {"name"=>["manage", "assignments"], "action"=>"link", "controller"=>"menu_items"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/goto_assignments
+Completed in 285ms (DB: 10) | 302 Found [http://localhost/menu/manage/assignments]
+
+
+Processing TreeDisplayController#goto_assignments (for 127.0.0.1 at 2011-11-01 17:05:34) [GET]
+  Parameters: {"action"=>"goto_assignments", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Redirected to http://localhost:3000/tree_display/list
+Completed in 216ms (DB: 14) | 302 Found [http://localhost/tree_display/goto_assignments]
+
+
+Processing TreeDisplayController#list (for 127.0.0.1 at 2011-11-01 17:05:35) [GET]
+  Parameters: {"action"=>"list", "controller"=>"tree_display"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Action: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering tree_display/list
+Completed in 1262ms (View: 912, DB: 26) | 200 OK [http://localhost/tree_display/list]
+
+
+Processing SignUpSheetController#add_signup_topics (for 127.0.0.1 at 2011-11-01 17:05:43) [GET]
+  Parameters: {"action"=>"add_signup_topics", "id"=>"458", "controller"=>"sign_up_sheet"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering sign_up_sheet/add_signup_topics
+Completed in 438ms (View: 211, DB: 39) | 200 OK [http://localhost/sign_up_sheet/add_signup_topics/458]
+
+
+Processing SignUpSheetController#new (for 127.0.0.1 at 2011-11-01 17:05:54) [GET]
+  Parameters: {"action"=>"new", "id"=>"458", "controller"=>"sign_up_sheet"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering sign_up_sheet/new
+Completed in 242ms (View: 162, DB: 5) | 200 OK [http://localhost/sign_up_sheet/new/458]
+
+
+Processing SignUpSheetController#new (for 127.0.0.1 at 2011-11-01 17:09:03) [GET]
+  Parameters: {"action"=>"new", "id"=>"458", "controller"=>"sign_up_sheet"}
+(Role still current)
+(Logged-in user)
+Session: time NOT expired
+Controller: authorised
+Authorised? true
+Rendering template within layouts/application
+Rendering sign_up_sheet/new
+Completed in 247ms (View: 41, DB: 13) | 200 OK [http://localhost/sign_up_sheet/new/458]
